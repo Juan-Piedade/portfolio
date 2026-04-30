@@ -34,6 +34,10 @@
     --border-color: #cfcfcf;
 }
 
+.html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--bg-primary);
@@ -64,31 +68,25 @@ body {
 }
 
 .sidebar a:hover {
+    color: var(--color-secondary);
+}
+
+.sidebar a.active {
     color: var(--color-primary);
+    transform: scale(1.2);
 }
 
 .container {
-    margin-left: 100px;
+    padding-left: 120px;
+    padding-right: 110px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
+    padding: 80px 40px;
 }
 
-.card {
-    width: 100%;
-    max-width: 900px;
-    padding: 40px;
-    border-radius: 20px;
-    background: var(--bg-secondary);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 20px rgba(210, 159, 34, 0.1);
-    animation: fadeIn 1s ease;
-}
 
 .hero {
     text-align: center;
