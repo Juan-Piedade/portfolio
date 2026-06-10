@@ -3,55 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Juan | Desenvolvedor Back-end</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
       <div class="container">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Sobre</a>
-          </li>
-          <li>
-            <a href="#">projetos</a>
-          </li>
-          <li>
-            <a href="#">blog</a>
-          </li>
-          <li>
-            <a href="#">contato</a>
-          </li>
-        </ul>
+        <span class="logo">Portfólio</span>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main>
-      <div class="profile">
-          <img src="https://avatars.githubusercontent.com/u/105644863?v=4" alt="foto de perfil" />
-      </div>
-        <div class="info-profile">
-          <h1>Olá, eu sou o Juan</h1>
-          <p>Desenvolvedor Back-end</p>
-          <p> texto</p>
+      <section id="home" class="hero">
+        <div class="profile">
+          <img src="./assets/profile.jpeg" alt="Foto de perfil" />
         </div>
-        <div class="social-media">
-          <button>Linkedin</button>
-          <button>GitHub</button>
-        </div>
-        <div class="skills">
-          <h2>Habilidades</h2>
-          <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </div>
-    </main>
 
+        <div class="info-profile">
+          <h1>Olá, eu sou o <span class="highlight">Juan</span></h1>
+          <p class="role">Desenvolvedor Back-end</p>
+          <p class="bio">Apaixonado por código limpo e soluções eficientes.</p>
+        </div>
+
+        <div class="social-media">
+          <a
+            href="#"
+            target="_blank"
+            class="btn"
+            >LinkedIn</a
+          >
+          <a
+            href="#"
+            target="_blank"
+            class="btn btn-outline"
+            >GitHub</a
+          >
+        </div>
+
+        <div class="skills" id="sobre">
+          <h2>Habilidades</h2>
+          <div class="skills-list">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              title="HTML"
+              height="35"
+              alt="html5 logo"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              title="CSS"
+              height="35"
+              alt="css logo"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              title="JavaScript"
+              height="35"
+              alt="javascript logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=ts"
+              title="TyperScript"
+              height="35"
+              alt="typescript logo"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              title="React"
+              height="35"
+              alt="react logo"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              title="Next.js"
+              height="35"
+              alt="nextjs logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=tailwind"
+              title="TailwindCSS"
+              height="35"
+              alt="tailwindcss logo"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+              title="Docker"
+              height="35"
+              alt="docker logo"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              title="Git"
+              height="35"
+              alt="git logo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
