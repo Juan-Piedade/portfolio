@@ -4,14 +4,20 @@
   padding: 0;
 }
 
+:root {
+  --card-bf: #000;
+  --container-bg: #000000;
+  --font-color: #ffffff;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #0a0303;
   color: #333;
 }
 
 header {
-  background-color: #fff;
+  background-color: var(--container-bg);
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -19,42 +25,45 @@ header {
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 16px 24px;
+  width: 100%;
+  padding: 16px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  background-color: var(--container-bg);
 }
 
-.logo {
+.container span {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
+  margin-right: auto;
 }
 
-nav ul {
+.container nav ul {
+  text-align: right;
   display: flex;
   list-style: none;
   gap: 24px;
 }
 
-nav ul li a {
+.container li a {
   text-decoration: none;
-  color: #555;
+  color: var(--font-color);
   font-size: 0.95rem;
   transition: color 0.2s;
 }
 
-nav ul li a:hover {
-  color: #000;
+.container li a:hover {
+  color: #ff0000;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 24px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -88,6 +97,7 @@ nav ul li a:hover {
   margin-top: 10px;
   color: #555;
   max-width: 400px;
+  line-height: 1.5;
 }
 
 .social-media {
