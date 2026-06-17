@@ -8,6 +8,7 @@
   --card-bf: #000;
   --container-bg: #000000;
   --font-color: #ffffff;
+  --border-profile: #0004ff;
 }
 
 body {
@@ -72,7 +73,7 @@ header {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ddd;
+  border: 3px solid var(--border-profile);
 }
 
 .info-profile {
